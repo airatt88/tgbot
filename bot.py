@@ -93,4 +93,7 @@ def help_command(message):
 /mentor — Совет от ментора
 """)
 
-bot.infinity_polling()
+if __name__ == "__main__":
+    print("Бот запущен...")
+    bot.polling(none_stop=True, interval=0)
+
