@@ -17,7 +17,7 @@ def ask_gpt(prompt):
         headers = {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://твоё-имя.railway.app"  # ОБЯЗАТЕЛЬНО замени на свой Railway домен!
+            "HTTP-Referer": "https://tgbot-production-3d4c.up.railway.app"
         }
         payload = {
             "model": "openai/gpt-3.5-turbo",
@@ -63,7 +63,7 @@ def receive_update():
 # Установка вебхука
 @app.route("/set_webhook", methods=["GET"])
 def set_webhook():
-    webhook_url = f"https://твоё-имя.railway.app/{TELEGRAM_TOKEN}"  # Замени на свой Railway URL
+    webhook_url = f"https://tgbot-production-3d4c.up.railway.app/{TELEGRAM_TOKEN}"
     success = bot.set_webhook(url=webhook_url)
     return "Webhook set" if success else "Webhook failed", 200
 
