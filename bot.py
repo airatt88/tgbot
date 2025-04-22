@@ -4,8 +4,8 @@ import requests
 import random
 
 # Токены
-TELEGRAM_TOKEN = "твой_токен"
-OPENROUTER_API_KEY = "твой_openrouter_ключ"
+TELEGRAM_TOKEN = "8000909618:AAH9skOY44FOwjgWBFm9nm91jxf_HvpmIiY"
+OPENROUTER_API_KEY = "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"
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 app = Flask(__name__)
