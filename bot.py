@@ -13,7 +13,8 @@ def ask_gpt(prompt):
         headers = {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://t.me/ytytyttybot"
+            "HTTP-Referer": "https://t.me/ytytyttybot",
+            "X-Title": "Telegram Bot"
         }
         payload = {
             "model": "openai/gpt-3.5-turbo",
