@@ -2,10 +2,11 @@ import telebot
 from flask import Flask, request
 import requests
 import random
+import os
 
 # Токены
-TELEGRAM_TOKEN = "8000909618:AAH9skOY44FOwjgWBFm9nm91jxf_HvpmIiY"
-OPENROUTER_API_KEY = "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"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 app = Flask(__name__)
