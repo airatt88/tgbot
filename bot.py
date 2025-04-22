@@ -5,7 +5,7 @@ import random
 import requests
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = "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"
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
